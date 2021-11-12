@@ -1,8 +1,8 @@
 <% @lists.each do |list|%>
-<%= list.name %>
-<%= image_tag "carr.jpg", alt: "Le Wagon", width: 200 %>
-<li class="list-group-item">
+  <%= list.name %>
+  <%= image_tag "carr.jpg", alt: "Le Wagon", width: 200 %>
+  <li class="list-group-item">
   <%= list.name%>
-  <%= link_to "create a list", new_list_path%>
-</li>
+  </li>
 <% end %>
+<%= link_to "create a list", new_list_path%>
